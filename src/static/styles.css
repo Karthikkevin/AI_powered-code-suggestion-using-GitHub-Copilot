@@ -101,10 +101,10 @@ section h3 {
   font-size: 13px;
 }
 
-/* Participant list (bulleted but compact) */
+/* Participant list (compact, no bullets) */
 .activity-card .participants ul {
-  list-style: disc;
-  padding-left: 20px;
+  list-style: none;
+  padding-left: 0;
   margin: 0;
 }
 
@@ -116,6 +116,22 @@ section h3 {
   color: #333;
   font-size: 14px;
 }
+
+/* Remove/unregister button */
+.activity-card .participant-remove {
+  margin-left: auto;
+  background: transparent;
+  border: none;
+  color: #c62828;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 4px;
+}
+
+.activity-card .participant-remove:hover {
+  background: rgba(198,40,40,0.08);
+} 
 
 /* Small circular avatar/initial badge */
 .activity-card .participant-avatar {
